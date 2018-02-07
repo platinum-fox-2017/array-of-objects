@@ -11,3 +11,14 @@ createObj('Tama', 2, 'Male');
 createObj('Rifky', 3, 'Male');
 
 console.log(arr);
+
+function getData(name){
+    for(let i=0; i<arr.length; i++){
+        if(arr[i].name == name){
+            return arr[i];
+        }
+    }
+    return -1;
+}
+
+console.log(getData('Icha'));
