@@ -15,3 +15,14 @@ createObj('Tama',2,'male');
 createObj('Rifky',3,'male')
 
 console.log(arr);
+
+
+function getData(name) {
+ for(var i=0;i<arr.length;i++) {
+    if(name===arr[i].name) {
+      return arr[i];
+    }
+  }
+}
+
+console.log(getData('Icha'));
